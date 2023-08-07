@@ -20,3 +20,23 @@ taskForm.addEventListener('submit', function(event) {
         addTask(taskText);
     }
 });
+
+
+function addTask(taskText) {
+    const taskItem = document.createElement('li');
+    const taskCheckbox = document.createElement('input');
+    taskCheckbox.type = 'checkbox';
+    taskCheckbox.classList.add('task-checkbox');
+    
+    const taskTextElement = document.createElement('span');
+    taskTextElement.textContent = taskText;
+
+    taskItem.appendChild(taskCheckbox); // Adiciona o checkbox à tarefa
+    taskItem.appendChild(taskTextElement); // Adiciona o texto da tarefa
+    taskList.appendChild(taskItem);
+    
+    taskInput.value = '';
+}
+
+
+

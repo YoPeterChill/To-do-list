@@ -31,3 +31,22 @@ button {
     padding: 8px 20px;
     cursor: pointer;
 }
+/* Estilo para os checkboxes */
+.task-checkbox {
+    margin-right: 10px;
+}
+
+/* Estilize o visual dos checkboxes */
+.task-checkbox:checked::before {
+    content: '\2713'; /* Caractere Unicode do checkmark */
+    color: #007bff; /* Cor do checkmark */
+    font-size: 16px;
+}
+
+/* Estilize o texto da tarefa */
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
